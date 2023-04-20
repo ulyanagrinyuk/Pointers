@@ -4,7 +4,7 @@ using namespace std;
 #define delimitr "\n------------------------------------\n"
 
 
-void Exchange(int a, int b);
+void Exchange(int* a, int* b);
 
 void main()
 {
@@ -13,18 +13,18 @@ void main()
 	cout << a << "\t" << b << endl;
 	cout << &a << "\t" << &a << endl;
 	cout << delimitr << endl;
-	Exchange(a, b);
+	Exchange(&a, &b);
 	cout << delimitr << endl;
 	cout << a << "\t" << b << endl;
 	cout << &a << "\t" << &b << endl;
 
 }
 
-void Exchange(int a, int b)
+void Exchange(int* a, int* b)
 {
 	cout << &a << "\t" << &b << endl;
-	int buffer = a;
-	a = b;
-	b = buffer;
+	int buffer = *a;
+	*a = *b;
+	*b = buffer;
 	cout << a << "\t" << b << endl;
 }
