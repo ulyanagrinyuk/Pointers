@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -29,23 +29,23 @@ void main()
 
 
 	int n;
-	cout << "Ââåäèòå ðàçìåð ìàññèâà:"; cin >> n;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°:"; cin >> n;
 	int* arr = new int[n];
 	FillRand(arr, n);
 	Print(arr, n);
 
 	int value;
-	cout << "Ââåäèòå äîáàâëÿåìîå çíà÷åíèå:"; cin >> value;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ:"; cin >> value;
 	arr = push_back(arr, n, value);
 	Print(arr, n);
 
-	cout << "Ââåäèòå äîáàâëÿåìîå çíà÷åíèå:"; cin >> value;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ:"; cin >> value;
 	arr = push_front(arr, n, value);
 	Print(arr, n);
 
 	int index;
-	cout << "Ââåäèòå èíäåêñ äîáàâëÿåìîå çíà÷åíèå:"; cin >> index;
-	cout << "Ââåäèòå äîáàâëÿåìîå çíà÷åíèå:"; cin >> value;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð½Ð´ÐµÐºÑ Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ:"; cin >> index;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ:"; cin >> value;
 	arr = insert(arr, n, value, index);
 	Print(arr, n);
 
@@ -59,8 +59,8 @@ void main()
 #endif // DINAMIC_MEMORY_1
 
 	int rows, cols;
-	cout << "Ââåäèòå êîë-âî ñòðîê:"; cin >> rows;
-	cout << "Ââåäèòå êîë-âî ýëåìåíòû ñòðîê:"; cin >> cols;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÑ‚Ñ€Ð¾Ðº:"; cin >> rows;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ ÑÑ‚Ñ€Ð¾Ðº:"; cin >> cols;
 
 
 	int** arr = new int* [rows];
