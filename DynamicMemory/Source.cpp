@@ -239,7 +239,7 @@ template<typename T>T* push_front(T* arr, int& n, T value)
 	return arr;
 }
 
-template<typename T>T* insert(int* arr, int& n, T value, int index)
+template<typename T>T* insert(T* arr, int& n, T value, int index)
 {
 	T* buffer = new T[n + 1];
 	for (int i = 0; i < index; i++)
@@ -284,7 +284,7 @@ template<typename T>T* pop_front(T* arr, int& n)
 template<typename T>T** push_row_back(T** arr, int& rows, const int cols)
 {
 	T** buffer = new T* [rows + 1];
-	for (int i = 0; i < rows ; i++)buffer[i] = arr[i];
+	for (int i = 0; i < rows; i++)buffer[i] = arr[i];
 	delete[] arr;
 	buffer[rows] = new int[cols];
 	rows++;
