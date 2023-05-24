@@ -141,6 +141,14 @@ void main()
 	arr = pop_row_back(arr, rows, cols);
 	Print(arr, rows, rows);*/
 
+	/*int rows, cols;
+	cout << "Введите кол-во строк:"; cin >> rows;
+	cout << "Введите кол-во столбцов:"; cin >> cols;
+	int** arr = Allocate<int>(rows, cols);
+	clock_t _start = clock();
+	arr = PushRowBack(arr, rows, cols);
+	cout << "Строка добавлена:" << double(t_end - t_start);*/
+
 	Clear(arr, rows);
 }
 
